@@ -1,0 +1,161 @@
+@import 'jeet'
+*,
+*:after,
+*:before
+    margin 0
+    padding 0
+    box-sizing border-box
+
+yellow = #f1ce40
+blue = #055c8f
+.color-yellow
+    color: yellow
+.color-blue
+    color: blue
+body 
+    background-image: url("../img/background.jpg")
+    background-position: top center
+    font-family: 'PT Sans', sans-serif
+    font-size: 16px
+    +below(965px)
+        font-size: 12px
+.img-responsive
+    display block
+    max-width 100%
+    height auto
+    margin 0 auto
+.text-center 
+    text-align: center
+.float-left
+    float: left
+.float-right
+    float: right
+.hide
+    display: none 
+header
+    text-align: center
+    margin-bottom: 110px
+    .logo
+        display inline-block
+        margin-top 140px
+        margin-bottom: 70px
+    nav 
+        a
+            text-transform: uppercase
+            padding: 5px 10px
+            margin: 0 47px
+            font-size: 1.3em
+            text-decoration: none
+            color: #000
+            &:hover
+                text-decoration: underline
+            +below(965px)
+                margin: 0 20px
+                display: block
+                font-size: 1.5em
+.banner
+    background-image: url("../img/banner-background.jpg")
+    height: 814px
+    text-align: center
+    padding-top: 80px
+    background-position: center center
+    +below(965px)
+            width: 100%
+            padding: 50px
+            height: 100%
+    .banner-div
+        padding: 40px 0 30px 0
+        +below(965px)
+            padding: 20px 0
+    .banner-logo
+        position: absolute
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        +below(965px)
+            margin-top: 20px
+            position: relative
+.infos
+    text-align: center
+    margin-top: 100px
+    .infos-div
+        margin-bottom: 100px
+        margin: 0 auto
+    p
+        font-size: 2em
+        margin: 1em 0
+        line-height: 1.5em
+    .infos-txt
+        text-align: left
+        width: 965px
+        margin: 0 auto
+        padding-left: 70px
+        padding-right: 40px
+        +below(965px)
+            width: 100%
+            padding-left: 20px
+            padding-right: 20px
+    .infos-box
+        text-align: center
+        padding: 150px 50px 20px 120px
+        margin: 100px auto
+        font-weight: bold
+        width: 851px
+        height: 426px
+        background-image: url("../img/infos-box.png")
+        +below(965px)
+            width: 310px
+            height: 190px
+            padding: 0 20px
+            padding: 25px 60px 10px 60px
+            background-size: contain
+            background-repeat: no-repeat
+            margin: 20px auto;
+            background-position: top center
+        a
+            color: white
+            background: blue
+            padding: 15px 40px
+            text-decoration: none
+            font-size: 1.8em
+            &:hover
+                background: yellow
+                color: blue
+            +below(965px)
+                font-size: 1.1em
+                padding: 10px 15px
+                margin-left: 0px
+        .infos-box-txt
+            text-align: left
+            p
+                font-size: 2em
+                color: blue
+                +below(965px)
+                    font-size: 1.5em
+.termos
+    background-image: url("../img/background-green.jpg")
+    background-position: center center
+    color white
+    text-align: center
+    padding: 100px 0
+    .termos-txt
+        text-align: left
+        width: 965px
+        margin: 0 auto
+        padding-left: 70px
+        padding-right: 40px
+        +below(965px)
+            width: 100%
+            padding-left: 30px
+            padding-right: 30px
+    p
+        font-size: 2em
+        margin: 1em 0
+        line-height: 1.5em
+    small
+        font-size: 1em
+        line-height: 0.8em 
+.nolink 
+    pointer-events: none
+

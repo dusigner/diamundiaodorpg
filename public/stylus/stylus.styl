@@ -1,0 +1,263 @@
+@import 'jeet'
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+*,
+*:after,
+*:before
+    margin 0
+    padding 0
+    box-sizing border-box
+body 
+    background-image: url("../img/background.jpg")
+    background-position: top center
+    background-repeat: no-repeat
+    background-color: #272321
+    font-family: 'Lato', sans-serif
+    font-size: 16px
+.img-responsive
+    display block
+    max-width 100%
+    height auto
+    margin 0 auto
+.text-center 
+    text-align: center
+.float-left
+    float: left
+.float-right
+    float: right
+.hide
+    display: none 
+header
+    height 100vh
+    width 100%
+    background: url("../img/background-header.png")
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    text-align: center
+    padding-top: 200px
+    +mobile()
+        padding-top: 20px
+    +tablet()
+        padding-top: 50px
+        height 800px
+    .logo
+        margin-bottom: 200px
+        +mobile()
+            width: 80%
+            max-width 200px
+            margin-bottom: 20px
+        +tablet()
+            margin-bottom: 80px
+    nav 
+        a
+            display inline-block
+            width 170px
+            height 100px
+            margin: 0 10px
+            color #fff
+            text-transform uppercase
+            text-decoration: none
+            font-weight: 900
+            +mobile()
+                width 33%
+                margin: 20px
+            img 
+                margin-top: 20px
+            &:hover
+                color: #ff9900
+.video
+    text-align: center
+    padding-top: 100px
+    +mobile()
+        padding: 80px 30px
+    h1 
+        margin: 140px 0
+        color: #ffffff
+        font-weight: 300
+        text-transform: uppercase
+        +mobile()
+            margin: 40px 0
+        strong 
+            font-weight: 900
+    .videoWrapper 
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+        margin: 0 auto
+        width 1280px
+        height: 720px
+        max-width: 100%
+        +mobile()
+                height: 100%;
+        +tablet()
+            height: 100%;
+        iframe
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 720px;
+            +mobile()
+                height: 100%;
+            +tablet()
+                height: 100%;
+.pergaminho-topo
+    margin-top: -200px
+.pergaminho
+    background: url("../img/pergaminho-content.png")
+    background-position: top center
+    background-repeat: repeat-y
+    text-align: center
+    padding-bottom: 100px
+    .divisor
+        margin-bottom: 50px
+    div
+        width: 80%
+        margin: 0 auto
+        padding: 50px
+        font-size: 26px
+        text-align: left 
+        overflow-y: scroll
+        height 2036px
+        +mobile()
+            font-size: 16px
+            width 90%
+        p
+            color: #ffffff
+            text-transform: uppercase
+            margin: 50px 0
+            line-height: 42px
+            +mobile()
+                margin: 20px 0 
+                line-height: 18px
+.alistese
+    background: url("../img/background-alistese.png")
+    background-position: top center
+    text-align: center
+    padding-top: 140px
+    padding-bottom: 0px
+    h1 
+        margin: 50px 0
+        color: #ffffff
+        font-weight: 300
+        text-transform: uppercase
+        strong 
+            font-weight: 900
+    form 
+        background: url("../img/background-form.png")
+        background-position: top center
+        width 752px
+        height 889px
+        margin: 50px auto
+        padding: 100px 80px 0 0
+        color: #2d2c2c
+        font-size: 22px
+        font-weight: 900
+        text-transform: uppercase
+        text-align: right
+        +mobile()
+            width 100%
+            padding: 30px
+            text-align: center
+            font-size: 16px
+        +tablet()
+            width 100%
+            padding: 30px
+            text-align: center
+            font-size: 16px
+        p
+            text-align: center
+            margin: 0px 0 30px 80px
+            +mobile()
+                margin: 20px 0 30px 0
+        label 
+            margin-right: 5px
+        input 
+            border dashed 3px #a96a26
+            background: transparent
+            font-size: 22px
+            padding: 5px
+            width: 65%
+            +mobile()
+                width: 100%
+        textarea
+            border dashed 3px #a96a26
+            background: transparent
+            font-size: 22px
+            padding: 5px
+            width: 65%
+            +mobile()
+                width: 100%
+        div
+            margin: 10px 0
+            display: block
+        button
+            background: url("../img/background-form-btn.png")
+            background-position: top center
+            width: 180px
+            height 61px
+            background-repeat: no-repeat
+            color: #ffffff
+            padding-right: 33px
+            padding-top: 3px
+            font-size: 12px
+            text-transform: uppercase
+            border: none
+        .form-btn
+            text-align: center
+.share
+    background: url("../img/background-share.png")
+    background-position: top center
+    background-repeat: no-repeat
+    text-align: center
+    padding: 100px 0
+    +mobile()
+        padding: 30px 0
+    +tablet()
+        padding: 50px 0
+    h1 
+        color: #ffffff
+        text-transform: uppercase
+        margin: 100px 0
+        font-weight: 900
+        +mobile()
+            margin: 20px 0
+    nav 
+        margin-bottom: 100px
+        a
+            display: inline-block
+            margin: 10px 90px
+            width 80px
+            +tablet()
+                width 50px
+footer 
+    text-align: center
+    background: url("../img/background-footer.png")
+    background-repeat: no-repeat
+    background-position: top center
+    color: #ffffff
+    padding: 100px 0 30px 0
+    +mobile()
+        padding: 20px 0 10px 0
+    h1 
+        font-weight: 300
+        width 50%
+        margin: 50px auto
+        text-align: center
+        text-transform: uppercase
+        +mobile()
+            width: 90%
+            font-size: 23px
+        +tablet()
+            width: 90%
+        strong 
+            font-weight: 900
+    .logo-footer
+        margin-top: 270px
+        width 122px
+        +mobile()
+            margin-top: 150px
+        +tablet()
+            margin-top: 150px
+    

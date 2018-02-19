@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../img/background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #272321;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.hide {
+  display: none;
+}
+header {
+  height: 100vh;
+  width: 100%;
+  background: url("../img/background-header.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 200px;
+}
+@media only screen and (max-width: 400px) {
+  header {
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  header {
+    padding-top: 50px;
+    height: 800px;
+  }
+}
+header .logo {
+  margin-bottom: 200px;
+}
+@media only screen and (max-width: 400px) {
+  header .logo {
+    width: 80%;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  header .logo {
+    margin-bottom: 80px;
+  }
+}
+header nav a {
+  display: inline-block;
+  width: 170px;
+  height: 100px;
+  margin: 0 10px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+}
+@media only screen and (max-width: 400px) {
+  header nav a {
+    width: 33%;
+    margin: 20px;
+  }
+}
+header nav a img {
+  margin-top: 20px;
+}
+header nav a:hover {
+  color: #f90;
+}
+.video {
+  text-align: center;
+  padding-top: 100px;
+}
+@media only screen and (max-width: 400px) {
+  .video {
+    padding: 80px 30px;
+  }
+}
+.video h1 {
+  margin: 140px 0;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 400px) {
+  .video h1 {
+    margin: 40px 0;
+  }
+}
+.video h1 strong {
+  font-weight: 900;
+}
+.video .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin: 0 auto;
+  width: 1280px;
+  height: 720px;
+  max-width: 100%;
+}
+@media only screen and (max-width: 400px) {
+  .video .videoWrapper {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .video .videoWrapper {
+    height: 100%;
+  }
+}
+.video .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 720px;
+}
+@media only screen and (max-width: 400px) {
+  .video .videoWrapper iframe {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .video .videoWrapper iframe {
+    height: 100%;
+  }
+}
+.pergaminho-topo {
+  margin-top: -200px;
+}
+.pergaminho {
+  background: url("../img/pergaminho-content.png");
+  background-position: top center;
+  background-repeat: repeat-y;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.pergaminho .divisor {
+  margin-bottom: 50px;
+}
+.pergaminho div {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+  font-size: 26px;
+  text-align: left;
+  overflow-y: scroll;
+  height: 2036px;
+}
+@media only screen and (max-width: 400px) {
+  .pergaminho div {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+.pergaminho div p {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 50px 0;
+  line-height: 42px;
+}
+@media only screen and (max-width: 400px) {
+  .pergaminho div p {
+    margin: 20px 0;
+    line-height: 18px;
+  }
+}
+.alistese {
+  background: url("../img/background-alistese.png");
+  background-position: top center;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 0px;
+}
+.alistese h1 {
+  margin: 50px 0;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.alistese h1 strong {
+  font-weight: 900;
+}
+.alistese form {
+  background: url("../img/background-form.png");
+  background-position: top center;
+  width: 752px;
+  height: 889px;
+  margin: 50px auto;
+  padding: 100px 80px 0 0;
+  color: #2d2c2c;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: right;
+}
+@media only screen and (max-width: 400px) {
+  .alistese form {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .alistese form {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+.alistese form p {
+  text-align: center;
+  margin: 0px 0 30px 80px;
+}
+@media only screen and (max-width: 400px) {
+  .alistese form p {
+    margin: 20px 0 30px 0;
+  }
+}
+.alistese form label {
+  margin-right: 5px;
+}
+.alistese form input {
+  border: dashed 3px #a96a26;
+  background: transparent;
+  font-size: 22px;
+  padding: 5px;
+  width: 65%;
+}
+@media only screen and (max-width: 400px) {
+  .alistese form input {
+    width: 100%;
+  }
+}
+.alistese form textarea {
+  border: dashed 3px #a96a26;
+  background: transparent;
+  font-size: 22px;
+  padding: 5px;
+  width: 65%;
+}
+@media only screen and (max-width: 400px) {
+  .alistese form textarea {
+    width: 100%;
+  }
+}
+.alistese form div {
+  margin: 10px 0;
+  display: block;
+}
+.alistese form button {
+  background: url("../img/background-form-btn.png");
+  background-position: top center;
+  width: 180px;
+  height: 61px;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding-right: 33px;
+  padding-top: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: none;
+}
+.alistese form .form-btn {
+  text-align: center;
+}
+.share {
+  background: url("../img/background-share.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 100px 0;
+}
+@media only screen and (max-width: 400px) {
+  .share {
+    padding: 30px 0;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .share {
+    padding: 50px 0;
+  }
+}
+.share h1 {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 100px 0;
+  font-weight: 900;
+}
+@media only screen and (max-width: 400px) {
+  .share h1 {
+    margin: 20px 0;
+  }
+}
+.share nav {
+  margin-bottom: 100px;
+}
+.share nav a {
+  display: inline-block;
+  margin: 10px 90px;
+  width: 80px;
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .share nav a {
+    width: 50px;
+  }
+}
+footer {
+  text-align: center;
+  background: url("../img/background-footer.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #fff;
+  padding: 100px 0 30px 0;
+}
+@media only screen and (max-width: 400px) {
+  footer {
+    padding: 20px 0 10px 0;
+  }
+}
+footer h1 {
+  font-weight: 300;
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 400px) {
+  footer h1 {
+    width: 90%;
+    font-size: 23px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  footer h1 {
+    width: 90%;
+  }
+}
+footer h1 strong {
+  font-weight: 900;
+}
+footer .logo-footer {
+  margin-top: 270px;
+  width: 122px;
+}
+@media only screen and (max-width: 400px) {
+  footer .logo-footer {
+    margin-top: 150px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  footer .logo-footer {
+    margin-top: 150px;
+  }
+}
